@@ -1,0 +1,10 @@
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./frontend/certs:/etc/nginx/ssl/certs:ro
+    ports:
+      - 80:80
+      - 443:443

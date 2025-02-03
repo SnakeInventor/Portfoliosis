@@ -1,0 +1,16 @@
+server {
+    listen 80;
+    listen 443 ssl;
+
+    ssl_certificate /etc/nginx/ssl/certs/portfoliosis.crt;
+    ssl_certificate_key /etc/nginx/ssl/certs/portfoliosis.key;
+    
+    root /usr/share/nginx/portfoliosis;
+    index index.html;
+    
+    location = / {
+        try_files $uri $uri/ /index.html;
+    }
+
+    # TODO: Implement reverse proxying portfoliosis/api/ to backend.
+}

@@ -1,0 +1,16 @@
+@use "/src/variables" as v;
+@use "sass:color";
+
+* {
+  color: v.$text;
+  background: black;
+}
+
+#root {
+
+}
+
+main {
+
+}
+
