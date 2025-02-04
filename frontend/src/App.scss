@@ -1,14 +1,21 @@
-@use "/src/variables" as v;
+@use "/src/_variables" as v;
 @use "sass:color";
 
 * {
+  color: #ffffff;
   color: v.$text;
   box-sizing: border-box;
 }
 
 #root {
+  background-color: #23293C;
   background-color: v.$background;
   min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
 }
 
 .header {
@@ -77,5 +84,120 @@
     align-items: center;
 
     font-size: 3.5rem;
+  }
+}
+
+.hero {
+width: 100%;
+max-width: 67.5rem;
+height: 35rem;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+
+padding: 0px;
+  
+  &__container {
+    max-width: 63rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: max-content;
+  }
+
+  &__logo-container {
+    position: relative;
+    width: 100%;
+    max-width: 20rem;
+    max-height: 20rem;
+    aspect-ratio: 1;
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0%;
+      bottom: 0%;
+      left: 0%;
+      right: 0%;
+      &.hero__logo-snake {
+        z-index: 3;
+      }
+      &.hero__logo-cog1 {
+        z-index: 2;
+      }
+      &.hero__logo-cog2 {
+        z-index: 1;
+      }
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &-heading {
+      margin: 0;
+      padding: 0;
+  
+      color: rgb(255, 255, 255);
+      font-family: Tomorrow;
+      font-size: 72px;
+      font-weight: 700;
+      line-height: 86px;
+      letter-spacing: 0px;
+      text-align: left;
+    }
+    &-underheading {
+      padding: 0rem;
+      margin: 0rem;
+  
+      color: rgba(255, 255, 255, 0.5);
+      font-family: Inter;
+      font-size: 36px;
+      font-weight: 500;
+      line-height: 44px;
+      letter-spacing: 0px;
+      text-align: left;
+    }  
+    &-button-wrapper {
+      position: relative;
+      display: flex;
+      height: 100%;
+      
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+      z-index: 0;
+    }
+  }
+}
+
+.gradient-button {  
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 5rem;
+  background-color: v.$grey1;
+  border: none;
+  border-radius: 1000px;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: -0.2rem;    
+    border-radius: 1000px;
+    background: conic-gradient(
+      #FF0000 60deg,
+      #FFFF00 ,
+      #FF00ED 120deg,
+      #FF00ED 240deg,
+      #2300FF ,
+      #FF0000 300deg
+    );
+    z-index: -1;
   }
 }
