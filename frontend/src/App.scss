@@ -1,5 +1,5 @@
 @use "/src/_variables" as v;
-@use "sass:color";
+@use "sass:color" as c;
 
 * {
   color: #ffffff;
@@ -66,6 +66,7 @@
       align-items: center;    
       padding: 0;
       li > a {
+        text-decoration: none;
         font-size: 1.25rem;
         font-weight: 400;
         line-height: 1.5rem;
@@ -87,20 +88,23 @@
   }
 }
 
+// hero section
+
 .hero {
 width: 100%;
 max-width: 67.5rem;
 height: 35rem;
+
 display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
-
 padding: 0px;
   
   &__container {
     max-width: 63rem;
     width: 100%;
+
     display: grid;
     grid-template-columns: 1fr auto;
     grid-template-rows: max-content;
@@ -141,7 +145,7 @@ padding: 0px;
       margin: 0;
       padding: 0;
   
-      color: rgb(255, 255, 255);
+      color: v.$text;
       font-family: Tomorrow;
       font-size: 72px;
       font-weight: 700;
@@ -181,6 +185,7 @@ padding: 0px;
   align-items: center;
   padding: 1rem 5rem;
   background-color: v.$grey1;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.75);
   border: none;
   border-radius: 1000px;
   
@@ -199,5 +204,266 @@ padding: 0px;
       #FF0000 300deg
     );
     z-index: -1;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+// skills
+
+.skills {
+  display: flex;
+  max-width: 67.5rem;
+  width: 100%;
+  height: 28rem;
+
+  padding: 0.625rem;
+  justify-content: space-between;
+
+  &__text-container {
+    display: grid;
+    grid-template-columns: auto, 1fr;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    max-width: 18rem;
+
+    padding: 0.625rem;
+    gap: 3rem;
+    &-title {
+      margin: 0rem;
+      width: 100%;
+      
+      color: rgb(255, 255, 255);
+      font-family: Inter;
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 44px;
+      letter-spacing: 0px;
+      text-align: left;
+    }
+    &-description {
+      margin: 0rem;
+      width: 100%;
+
+      padding: 0rem;
+
+      color: c.scale(v.$text, $lightness: -60%);
+      font-family: Inter;
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0px;
+      text-align: left;
+      }
+  }
+
+
+  &__cards {
+    display: flex;
+    width: 80%; // hacky way to make description take more space by default
+    height: 100%;
+
+    flex-direction: column;
+    padding: 0.75rem;
+    gap: 0.75rem;
+
+    background-color: v.$grey2;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+    &-tabs {
+      display: flex;
+      width: 100%;
+      margin: 0;
+      
+      list-style: none;
+      padding: 0.25rem 0.5rem;
+      gap: 1rem;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      
+      border-radius: 0.3125rem;
+      background-color: v.$grey3;
+      &-tab {
+        width: 100%;
+        
+        height: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 0.3125rem;
+        
+        &:hover {
+          background-color: c.scale($color: v.$grey3, $lightness: -40%);
+          cursor: pointer;
+        }
+
+        &--active {
+          background-color: v.$grey1;
+          &:hover {
+            background-color: v.$grey1;
+            cursor: auto;
+          }
+        }
+      }
+    }
+    &-container {
+      display: flex;
+      width: 100%;
+      height: 100%;
+
+      flex-direction: column;
+      gap: 0;
+      overflow-y: scroll;      
+
+      background-color: v.$background2;
+      box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      
+      &::-webkit-scrollbar
+      {
+        width: 0.5rem;
+      }
+
+      &::-webkit-scrollbar-thumb
+      {
+        border-radius: 10px;
+        background-color: v.$background3;
+      }
+    }
+    &-list {
+      width: 100%;
+      margin: 0;
+      row-gap: 1.5rem;
+      padding: 1rem;
+      
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-auto-rows: auto;
+
+      list-style: none;
+      &-item {
+        display: flex;
+        justify-content: center;        
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:61rem) {
+  .skills {
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+    &__text-container {
+      width: 100%;
+      justify-content: center;
+      
+    }
+    &__text {
+      width: 100%;
+      gap: 0;
+      padding: 1rem;
+      max-width: none;
+    }
+    &__cards {
+      width: 100%;
+    }
+    
+  }
+}
+@media screen and (max-width:47rem) {
+  .skills {
+    &__cards {
+      &-list {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+}
+@media screen and (max-width:33rem) {
+  .skills {
+    &__cards {
+      &-tabs {
+        flex-direction: column;
+        gap: 0.25rem;
+      }
+      &-list {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}
+
+.skillcard {
+  display: flex;
+  width: 14rem;
+  height: 8rem;
+  margin: 0 0.25rem;
+
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.625rem;
+
+  background-color: v.$background3;
+
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+  background: rgb(42, 52, 84);
+
+  &__label {
+    display: flex;
+
+    flex-direction: row;
+    align-items: center;
+
+    &-icon {
+      display: flex;
+      height: 2rem;
+      aspect-ratio: 1;
+      margin: 0rem;
+
+      justify-content: center;
+      align-items: center;
+      padding: 0rem;
+
+      &-image {
+        padding: 0rem;
+        margin: 0rem;
+        height: 100%;
+        width: 100%;
+      }
+    }
+    &-title {
+      margin: 0rem;
+
+      padding: 0.25rem;
+
+      color: v.$text;
+      font-family: Inter;
+      font-size: 1.3rem;
+      font-weight: 700;
+      line-height: 20px;
+      letter-spacing: 0px;
+      text-align: left;
+    }
+  }
+  &__text {
+    margin: 0rem;
+
+    padding: 0 0.25rem;
+
+    color: c.scale($color: v.$text, $alpha: -60%);
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1rem;
+    letter-spacing: 0px;
+    text-align: left;
   }
 }

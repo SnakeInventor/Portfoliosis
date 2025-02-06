@@ -1,0 +1,97 @@
+{
+  "title": "My Skills",
+  "description": "Some tools, technologies and methodologies i have experience working with",
+  "tabs": [
+    {
+      "title": "Backend",
+      "cards": [
+        {
+          "title": "C#/.NET",
+          "icon": "/sections/skills/csharplogo.png",
+          "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Lacus duis amet laoreet rhoncus tortor proin ad."
+        },
+        {
+          "title": "ASP.NET Core",
+          "icon": "/sections/skills/aspnetcorelogo.png",
+          "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Lacus duis amet laoreet rhoncus tortor proin ad."
+        },
+        {
+          "title": "PostgreSQL",
+          "icon": "/sections/skills/postgresqllogo.png",
+          "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Lacus duis amet laoreet rhoncus tortor proin ad."
+        }
+      ]
+    },
+    {
+      "title": "Frontend",
+      "cards": [
+
+        {
+          "title": "TypeScript",
+          "icon": "/sections/skills/typescriptlogo.png",
+          "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Lacus duis amet laoreet rhoncus tortor proin ad."
+        },
+        {
+          "title": "SASS/SCSS",
+          "icon": "/sections/skills/sasslogo.png",
+          "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Lacus duis amet laoreet rhoncus tortor proin ad."
+        },
+        {
+          "title": "React",
+          "icon": "/sections/skills/reactlogo.png",
+          "description": "Understand components, hooks, side-effects, VirtualDOM. Made a few SPA's with it."
+        },
+        {
+          "title": "React-Query",
+          "icon": "/sections/skills/reactquerylogo.png",
+          "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Lacus duis amet laoreet rhoncus tortor proin ad."
+        }
+      ]
+    },
+    {
+      "title": "DevOps",
+      "cards": [
+        {
+          "title": "Nginx",
+          "icon": "/sections/skills/nginxlogo.png",
+          "description": "Place holder"
+        },
+        {
+          "title": "Docker",
+          "icon": "/sections/skills/dockerlogo.png",
+          "description": "Place holder"
+        },
+        {
+          "title": "Git",
+          "icon": "/sections/skills/gitlogo.png",
+          "description": "Place holder"
+        },
+        {
+          "title": "GitHub actions",
+          "icon": "/sections/skills/githublogo.png",
+          "description": "Place holder"
+        },
+        {
+          "title": "CI/CD",
+          "icon": "/sections/skills/cicdlogo.png",
+          "description": "Place holder"
+        },
+        {
+          "title": "Linux",
+          "icon": "/sections/skills/linuxlogo.png",
+          "description": "Place holder"
+        }
+      ]
+    },
+    {
+      "title": "Other",
+      "cards": [
+        {
+          "title": "dnSpy",
+          "icon": "/sections/skills/dnspylogo.png",
+          "description": "Place holder"
+        }
+      ]
+    }
+  ]
+}

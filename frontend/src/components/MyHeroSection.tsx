@@ -1,8 +1,21 @@
+import { useMemo } from "react";
+
 import logo__snake from "/src/assets/logo__snake.png";
 import logo__cog1 from "/src/assets/logo__cog1.png";
 import logo__cog2 from "/src/assets/logo__cog2.png";
 
-export default function MyHeroSection() {
+import enTextData from "../assets/localisation/Hero/en-us.json"
+import ruTextData from "../assets/localisation/Hero/ru-ru.json"
+
+
+type MyHeroSectionProps = {
+  language: "ru-ru" | "en-us"
+}
+
+export default function MyHeroSection({language}: MyHeroSectionProps) {
+
+  const textData = useMemo(() => (language === "ru-ru") ?  ruTextData : enTextData, [language]);
+
   return (
     <section id="hero" className="hero">
       <div className="hero__container">
@@ -13,12 +26,12 @@ export default function MyHeroSection() {
         </div>
 
         <div className="hero__text">
-          <h1 className="hero__text-heading">SNAKEINVENTOR</h1>
+          <h1 className="hero__text-heading">{textData.heading}</h1>
           <h3 className="hero__text-underheading">
-            Building things like no other
+            {textData.underheading}
           </h3>
           <div className="hero__text-button-wrapper">
-            <button className="gradient-button">Get in touch</button>
+            <button className="gradient-button">{textData.contactButton}</button>
           </div>
         </div>
       </div>

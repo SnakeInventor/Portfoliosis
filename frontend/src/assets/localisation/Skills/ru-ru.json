@@ -1,0 +1,46 @@
+{
+  "title": "Мои Навыки",
+  "description": "Некоторые инструменты, технологии и методологии, с которыми я работал",
+  "tabs": [
+    {
+      "title": "Backend",
+      "cards": [
+        {
+          "title": "ASP.NET",
+          "icon": "/sections/skills/aspnet.png",
+          "description": "Place holder"
+        }
+      ]
+    },
+    {
+      "title": "Frontend",
+      "cards": [
+        {
+          "title": "React",
+          "icon": "/sections/skills/react.png",
+          "description": "Understand components, hooks, side-effects, VirtualDOM. Made a few SPA's with it."
+        }
+      ]
+    },
+    {
+      "title": "DevOps",
+      "cards": [
+        {
+          "title": "Nginx",
+          "icon": "/sections/skills/aspnet.png",
+          "description": "Place holder"
+        }
+      ]
+    },
+    {
+      "title": "Другие",
+      "cards": [
+        {
+          "title": "dnSpy",
+          "icon": "/sections/skills/dnSpy.png",
+          "description": "Place holder"
+        }
+      ]
+    }
+  ]
+}
