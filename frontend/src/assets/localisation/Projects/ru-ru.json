@@ -1,0 +1,358 @@
+{
+  "title": "Projects",
+  "description": "My most recent projects and work",
+  "cards": [
+    {
+      "title": "A very cool project",
+      "image": "/sections/projects/pictures/portfoliosispicture.png",
+      "links": [
+        {
+          "href": "https://github.com",
+          "image": "/sections/skills/githublogo.png"
+        }
+      ],
+      "shields": [
+        {
+          "text": "TypeScript",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "blue"
+        },
+        {
+          "text": "CSharp",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "purple"
+        },
+        {
+          "text": "React",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "cyan"
+        },
+        {
+          "text": "GitHub",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "orange"
+        },
+        {
+          "text": "Bash",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "Green"
+        },
+        {
+          "text": "Nginx",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "lime"
+        }
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "timestamp": "01/2025 -> 02/2025"
+    },
+    {
+      "title": "A very cool project2",
+      "image": "/sections/projects/pictures/portfoliosispicture.png",
+      "links": [
+        {
+          "href": "https://github.com",
+          "image": "/sections/skills/githublogo.png"
+        }
+      ],
+      "shields": [
+        {
+          "text": "TypeScript",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "blue"
+        },
+        {
+          "text": "CSharp",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "purple"
+        },
+        {
+          "text": "React",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "cyan"
+        },
+        {
+          "text": "GitHub",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "orange"
+        },
+        {
+          "text": "Bash",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "Green"
+        },
+        {
+          "text": "Nginx",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "lime"
+        }
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "timestamp": "01/2025 -> 02/2025"
+    },
+    {
+      "title": "A very cool project3",
+      "image": "/sections/projects/pictures/portfoliosispicture.png",
+      "links": [
+        {
+          "href": "https://github.com",
+          "image": "/sections/skills/githublogo.png"
+        }
+      ],
+      "shields": [
+        {
+          "text": "TypeScript",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "blue"
+        },
+        {
+          "text": "CSharp",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "purple"
+        },
+        {
+          "text": "React",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "cyan"
+        },
+        {
+          "text": "GitHub",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "orange"
+        },
+        {
+          "text": "Bash",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "Green"
+        },
+        {
+          "text": "Nginx",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "lime"
+        }
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "timestamp": "01/2025 -> 02/2025"
+    },
+    {
+      "title": "A very cool project4",
+      "image": "/sections/projects/pictures/portfoliosispicture.png",
+      "links": [
+        {
+          "href": "https://github.com",
+          "image": "/sections/skills/githublogo.png"
+        }
+      ],
+      "shields": [
+        {
+          "text": "TypeScript",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "blue"
+        },
+        {
+          "text": "CSharp",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "purple"
+        },
+        {
+          "text": "React",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "cyan"
+        },
+        {
+          "text": "GitHub",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "orange"
+        },
+        {
+          "text": "Bash",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "Green"
+        },
+        {
+          "text": "Nginx",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "lime"
+        }
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "timestamp": "01/2025 -> 02/2025"
+    },
+    {
+      "title": "A very cool project5",
+      "image": "/sections/projects/pictures/portfoliosispicture.png",
+      "links": [
+        {
+          "href": "https://github.com",
+          "image": "/sections/skills/githublogo.png"
+        }
+      ],
+      "shields": [
+        {
+          "text": "TypeScript",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "blue"
+        },
+        {
+          "text": "CSharp",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "purple"
+        },
+        {
+          "text": "React",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "cyan"
+        },
+        {
+          "text": "GitHub",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "orange"
+        },
+        {
+          "text": "Bash",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "Green"
+        },
+        {
+          "text": "Nginx",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "lime"
+        }
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "timestamp": "01/2025 -> 02/2025"
+    },
+    {
+      "title": "A very cool project6",
+      "image": "/sections/projects/pictures/portfoliosispicture.png",
+      "links": [
+        {
+          "href": "https://github.com",
+          "image": "/sections/skills/githublogo.png"
+        }
+      ],
+      "shields": [
+        {
+          "text": "TypeScript",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "blue"
+        },
+        {
+          "text": "CSharp",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "purple"
+        },
+        {
+          "text": "React",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "cyan"
+        },
+        {
+          "text": "GitHub",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "orange"
+        },
+        {
+          "text": "Bash",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "Green"
+        },
+        {
+          "text": "Nginx",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "lime"
+        }
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "timestamp": "01/2025 -> 02/2025"
+    },
+    {
+      "title": "A very cool project7",
+      "image": "/sections/projects/pictures/portfoliosispicture.png",
+      "links": [
+        {
+          "href": "https://github.com",
+          "image": "/sections/skills/githublogo.png"
+        }
+      ],
+      "shields": [
+        {
+          "text": "TypeScript",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "blue"
+        },
+        {
+          "text": "CSharp",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "purple"
+        },
+        {
+          "text": "React",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "cyan"
+        },
+        {
+          "text": "GitHub",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "orange"
+        },
+        {
+          "text": "Bash",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "Green"
+        },
+        {
+          "text": "Nginx",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "lime"
+        }
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "timestamp": "01/2025 -> 02/2025"
+    },
+    {
+      "title": "A very cool project8",
+      "image": "/sections/projects/pictures/portfoliosispicture.png",
+      "links": [
+        {
+          "href": "https://github.com",
+          "image": "/sections/skills/githublogo.png"
+        }
+      ],
+      "shields": [
+        {
+          "text": "TypeScript",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "blue"
+        },
+        {
+          "text": "CSharp",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "purple"
+        },
+        {
+          "text": "React",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "cyan"
+        },
+        {
+          "text": "GitHub",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "orange"
+        },
+        {
+          "text": "Bash",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "Green"
+        },
+        {
+          "text": "Nginx",
+          "image": "/sections/skills/csharplogo.png",
+          "color": "lime"
+        }
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "timestamp": "01/2025 -> 02/2025"
+    }
+  ]
+}
