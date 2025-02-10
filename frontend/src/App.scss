@@ -185,7 +185,7 @@ padding: 0px;
   align-items: center;
   padding: 1rem 5rem;
   background-color: v.$grey1;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.75);
+  
   border: none;
   border-radius: 1000px;
   
@@ -195,15 +195,27 @@ padding: 0px;
     inset: 0;
     margin: -0.2rem;    
     border-radius: 1000px;
-    background: conic-gradient(
-      #FF0000 60deg,
+    background: conic-gradient( from 0.5turn at 50% 50%,
+      #FF0000 70deg,
       #FFFF00 ,
       #FF00ED 120deg,
       #FF00ED 240deg,
-      #2300FF ,
+      #0051ff ,
       #FF0000 300deg
     );
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.75);
     z-index: -1;
+  }
+  &:disabled {
+    &::after {
+      background: v.$grey4;
+      box-shadow: none;
+    }
+  }
+  &:active {
+    &::after {
+      box-shadow: none;
+    }
   }
 
   &:hover {
@@ -752,15 +764,13 @@ padding: 0px;
   gap: 0.25rem;
 
   border-radius: 0.3125rem;
-  background: rgb(211, 183, 61);
   &__logo {
     display: flex;
     height: 0.9rem;
     aspect-ratio: 1;
+
     justify-content: center;
-    align-items: center;
-    
-    
+    align-items: center; 
 
     &-image {
       width: 100%;
@@ -768,12 +778,272 @@ padding: 0px;
     }
   }
   &__text {
-    color: rgb(255, 255, 255);
+    color: v.$text;
     font-family: Inter;
     font-size: 0.625rem;
     font-weight: 600;
     line-height: 0.9rem;
     letter-spacing: 0px;
     text-align: left;
+  }
+}
+
+// contacts
+
+.contacts {
+  display: flex;
+  max-width: 67.5rem;
+  width: 100%;
+  height: 28rem;
+  margin-top: 4rem;
+
+  padding: 0.625rem;
+  flex-direction: column;
+  gap: 0;
+  &__heading {
+    display: flex;
+    width: 100%;
+
+    padding: 1rem 0;
+    gap: 0.625rem;
+    flex-direction: column;
+    align-items: center;
+    &-title {
+      margin: 0;
+      padding: 0;
+
+      color: v.$text;
+      font-family: Inter;
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: 0px;
+    }
+    &-description {
+      margin: 0;
+      padding: 0;
+
+      color: c.scale(v.$text, $lightness: -60%);
+      font-family: Inter;
+      font-size: 1.25rem;
+      font-weight: 400;
+      letter-spacing: 0px;
+      text-align: left;
+    }
+  }
+  &__text {
+    display: grid;
+    height: 100%;
+    --text-width: 12rem;
+    grid-template-columns: auto minmax(auto, 36rem) auto;
+    
+
+
+    &-left {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      &-container {
+        width: var(--text-width);
+        padding-right: 1rem;
+      }
+      &-paragraph {
+        color: c.scale(v.$text, $alpha: -50%);
+        font-family: Inter;
+        font-size: 1rem;
+        font-weight: 400;
+        letter-spacing: 0px;
+      }
+      &-link {
+        color: v.$text;
+        text-decoration: none;
+        font-family: Inter;
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 0px;       
+      }
+    }
+    &-right {
+      display: flex;
+      &-list {
+        display: flex;
+        margin: 0;
+
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+        
+
+        list-style: none;
+        width: var(--text-width);
+      }
+      &-paragraph {
+        margin: 0;
+        
+        color: c.scale(v.$text, $alpha: -50%);
+        font-family: Inter;
+        font-size: 1rem;
+        font-weight: 400;
+        letter-spacing: 0px;
+      }
+      &-link {
+        color: v.$text;
+        text-decoration: none;
+        font-family: Inter;
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 0px;       
+      }
+    }
+  }
+  &__form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem;    
+    gap: 0.625rem;
+
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: v.$grey2;
+    z-index: 0;
+
+    &-input {
+      min-height: 2rem;
+      
+      padding: 0.4rem 0.625rem;
+
+      border: 1px solid v.$grey5;
+      border-radius: 0.5rem;
+      box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      background: v.$grey4;
+      outline: none;
+
+
+      font-family: Inter;
+      font-size: 1rem;
+      font-weight: 400;
+      text-align: left;
+
+      &--message {
+        height: 100%;
+
+        resize: none;
+        &::-webkit-scrollbar
+        {
+          width: 0.5rem;
+        }
+  
+        &::-webkit-scrollbar-thumb
+        {
+          border: 1px solid v.$grey5;
+          border-radius: 1.25rem;   
+          background-color: v.$grey1;
+        }
+      }
+    }
+    &-agreement {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      &-text {
+        color: c.scale(v.$text, $alpha: -50%);
+        font-family: Inter;
+        font-size: 1rem;
+        font-weight: 400;
+        letter-spacing: 0px;
+      }
+      &-checkbox {
+        
+        height: 1.5rem;
+        min-height: 1rem;
+        aspect-ratio: 1;
+        border-radius: 0.3rem;
+        
+        display: flex;
+        appearance: none;
+        padding: 0;
+
+        justify-content: center;
+        align-items: center;
+
+        &::before {
+          display: flex;
+          content: "✔";
+          width: 100%;
+          height: 100%;
+          border-radius: 4px;
+
+          padding: 0;
+          margin: 0;
+          justify-content: center;
+          align-items: center;
+       
+          transform: scale(0);
+          transition: 80ms transform ease-in-out;
+          
+          font-family: Inter;
+        }
+        &:checked{
+          &::before {
+            transform: scale(1);
+          } 
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:48rem) {
+  .contacts {
+    height: auto;
+    max-height: 9999px;
+    &__text {
+      grid-template-columns: auto minmax(auto, 36rem);
+      &-left {
+        &-container {
+          width: 100%;
+        }
+      }
+      &-right {
+        grid-column: 1/3;
+        &-list {
+          width: 100%;
+        }
+      }
+    }
+    &__form {
+      &-input--message {
+        min-height: 3rem; 
+      }
+      
+    }
+  }
+}
+@media screen and (max-width:33rem) {
+  .contacts {
+    height: auto;
+    max-height: 9999px;
+    &__text {
+      grid-template-columns: 1fr;
+      &-left {
+        &-container {
+          width: 100%;
+        }
+      }
+      &-right {
+        grid-column: 1;
+        &-list {
+          width: 100%;
+        }
+      }
+    }
+    &__form {
+      &-input--message {
+        min-height: 5rem;
+        field-sizing: content;
+      }
+    }
   }
 }

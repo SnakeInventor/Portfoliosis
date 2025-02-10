@@ -4,6 +4,7 @@ import MyHeader from "./components/MyHeader";
 import MyHeroSection from "./components/MyHeroSection";
 import MySkills from "./components/MySkills";
 import MyProjects from "./components/MyProjects";
+import MyContacts from "./components/MyContacts";
 function App() {
   const [currentLanguage] = useState<"en-us"|"ru-ru">("en-us")
 
@@ -13,6 +14,7 @@ function App() {
       <MyHeroSection language={currentLanguage}/>
       <MySkills language={currentLanguage}/>
       <MyProjects language={currentLanguage}/>
+      <MyContacts language={currentLanguage}/>
     </>
   );
 }

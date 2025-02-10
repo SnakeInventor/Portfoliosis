@@ -1,0 +1,36 @@
+{
+  "title": "CONTACT",
+  "description": "Connect with me",
+  "lefttext": {
+    "firstparagraph" : "Need a help with something or want to chat?",
+    "secondparagraph" : {
+      "emaillink" : {
+        "text": "Send me an email",
+        "href": "mailto:thisis@email.com"
+      },
+      "othertext": " to discuss your thing."
+    },
+    "thirdparagraph" : "Alternatively write your request into a form and click \"submit\" ->"
+  },
+  "righttext": {
+    "links": [
+      {
+        "title": "Email",
+        "text": "thisis@email.com",
+        "href": "mailto:thisis@email.com"
+      },
+      {
+        "title": "My github",
+        "text": "snakeinventor",
+        "href": "https://github.com/snakeinventor"
+      }
+    ]
+  },
+  "form": {
+    "namefieldplaceholder": "Name",
+    "emailfieldplaceholder": "Email",
+    "messagefieldplaceholder": "Message",
+    "agreementtext": "I give my permission to store and process my data.",
+    "submitbuttontext": "Submit"
+  }
+}
