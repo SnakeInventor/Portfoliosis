@@ -31,7 +31,7 @@ export default function MyHeroSection({language}: MyHeroSectionProps) {
             {textData.underheading}
           </h3>
           <div className="hero__text-button-wrapper">
-            <button className="gradient-button">{textData.contactButton}</button>
+            <button className="gradient-button hero__text-button">{textData.contactButton}</button>
           </div>
         </div>
       </div>

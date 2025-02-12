@@ -1,4 +1,5 @@
 import { useMemo } from "react"
+import language_icon from "../assets/change_language__icon.png"
 import enTextData from "../assets/localisation/Header/en-us.json"
 import ruTextData from "../assets/localisation/Header/ru-ru.json"
 
@@ -16,6 +17,9 @@ export default function MyHeader({language} :MyHeaderProps) {
       <div className="header__logo-wrapper">
         SNAKEINVENTOR
       </div>
+      <div className="header__logo-wrapper-mobile">
+        SI
+      </div>
       <nav className="header__navigation">
         <ul className="header__navigation-list">
           {
@@ -25,9 +29,11 @@ export default function MyHeader({language} :MyHeaderProps) {
           }
         </ul>
       </nav>
-      <div className="header__dropdown-menu-wrapper">
-      ≡
-      </div>
+      <button className="header__reset-language">
+        <div className="header__reset-language-container">
+          <img className="header__reset-language-image" src={language_icon}/>
+        </div>
+      </button>
     </div>
   </header>
   )

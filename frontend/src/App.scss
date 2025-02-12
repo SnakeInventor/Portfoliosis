@@ -2,15 +2,14 @@
 @use "sass:color" as c;
 
 * {
-  color: #ffffff;
   color: v.$text;
   box-sizing: border-box;
 }
 
 #root {
-  background-color: #23293C;
   background-color: v.$background;
   min-height: 100vh;
+  overflow: hidden;
 
   display: flex;
   flex-direction: column;
@@ -31,9 +30,10 @@
     display: grid;
     
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 0.625rem;
+    grid-template-rows: 100%;
   }
   // logo
+  &__logo-wrapper-mobile,
   &__logo-wrapper {
     display: flex;
     justify-self: start;
@@ -45,6 +45,9 @@
     font-size: 1.25rem;
     font-weight: 600;
     line-height: 1.5rem;
+  }
+  &__logo-wrapper-mobile {
+    display: none;
   }
 
   // navbar
@@ -74,17 +77,63 @@
     }
   }
 
-  // dropdown hamburger menu
-  &__dropdown-menu-wrapper {
+  // reset language button
+  &__reset-language {
     display: flex;
-    justify-self: end;
+    flex-direction: row-reverse;
     height: 100%;
-    aspect-ratio: 1;
+    padding: 0.75rem 0.5rem;
 
-    justify-content: center;
-    align-items: center;
+    border: none;
+    background: transparent;
+    &-container {
+      display: flex;
+      height: 100%;
+      aspect-ratio: 1;
+      margin: 0rem;
 
-    font-size: 3.5rem;
+      justify-content: center;
+      align-items: center;
+      padding: 0rem;
+    }
+    &-image {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@media screen and (max-width:34rem) {
+  .header {
+    &__logo-wrapper {
+      display: none;
+      &-mobile {
+        display: flex;
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+@media screen and (max-width:24rem) {
+  .header {
+    padding: 0 0.25rem;
+    &__logo-wrapper {
+      display: none;
+      &-mobile {
+        display: flex;
+        font-size: 2.5rem;
+      }
+    }
+    &__navigation-list {
+      display: flex;
+      gap: 1.5vw;
+      li > a {
+        font-size: min(5vw, 1.25rem);
+      }
+    }
   }
 }
 
@@ -99,7 +148,7 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
-padding: 0px;
+padding: 0rem;
   
   &__container {
     max-width: 63rem;
@@ -147,22 +196,19 @@ padding: 0px;
   
       color: v.$text;
       font-family: Tomorrow;
-      font-size: 72px;
+      font-size: 4.5rem;
       font-weight: 700;
-      line-height: 86px;
-      letter-spacing: 0px;
+      letter-spacing: 0rem;
       text-align: left;
     }
     &-underheading {
       padding: 0rem;
       margin: 0rem;
   
-      color: rgba(255, 255, 255, 0.5);
+      color:  c.scale(v.$text, $alpha: -50%);
       font-family: Inter;
-      font-size: 36px;
+      font-size: 2rem;
       font-weight: 400;
-      line-height: 44px;
-      letter-spacing: 0px;
       text-align: left;
     }  
     &-button-wrapper {
@@ -174,6 +220,41 @@ padding: 0px;
       justify-content: flex-end;
       align-items: flex-start;
       z-index: 0;
+    }
+  }
+}
+
+@media screen and (max-width:56rem) {
+  .hero {
+    height: fit-content;
+    &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+      gap: 1rem;
+    }
+    &__logo-container {  
+      max-width: min(35rem, calc(100% - 2rem));
+      max-height: 100%;
+    }
+    &__text {
+      align-items: center;
+      &-heading {
+        line-height: normal;
+        font-size: 10vw;
+      }
+      &-underheading {
+        font-size: 1.5rem;
+      }
+      &-button-wrapper {
+        width: 100%;
+        padding: 2rem 1rem;
+      }
+      &-button {
+        width: 100%;
+        
+      }
     }
   }
 }
@@ -249,12 +330,11 @@ padding: 0px;
       margin: 0rem;
       width: 100%;
       
-      color: rgb(255, 255, 255);
+      color: v.$text;
       font-family: Inter;
       font-size: 2rem;
       font-weight: 500;
-      line-height: 44px;
-      letter-spacing: 0px;
+      letter-spacing: 0rem;
       text-align: left;
     }
     &-description {
@@ -267,8 +347,7 @@ padding: 0px;
       font-family: Inter;
       font-size: 1.25rem;
       font-weight: 400;
-      line-height: 24px;
-      letter-spacing: 0px;
+      letter-spacing: 0rem;
       text-align: left;
       }
   }
@@ -344,7 +423,7 @@ padding: 0px;
 
       &::-webkit-scrollbar-thumb
       {
-        border-radius: 10px;
+        border-radius: 0.625rem;
         background-color: v.$background3;
       }
     }
@@ -431,7 +510,6 @@ padding: 0px;
 
   border-radius: 0.5rem;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
-  background: rgb(42, 52, 84);
 
   &__label {
     display: flex;
@@ -465,8 +543,7 @@ padding: 0px;
       font-family: Inter;
       font-size: 1.3rem;
       font-weight: 700;
-      line-height: 20px;
-      letter-spacing: 0px;
+      letter-spacing: 0rem;
       text-align: left;
     }
   }
@@ -480,7 +557,7 @@ padding: 0px;
     font-size: 0.75rem;
     font-weight: 400;
     line-height: 0.9rem;
-    letter-spacing: 0px;
+    letter-spacing: 0rem;
     text-align: left;
   }
 }
@@ -507,12 +584,11 @@ padding: 0px;
       margin: 0rem;
       padding: 0.25rem 0;
 
-      color: rgb(255, 255, 255);
+      color: v.$text;
       font-family: Inter;
       font-size: 2rem;
       font-weight: 500;
-      line-height: 44px;
-      letter-spacing: 0px;
+      letter-spacing: 0rem;
       text-align: left;
     }
     &-description {
@@ -523,8 +599,7 @@ padding: 0px;
       font-family: Inter;
       font-size: 1.25rem;
       font-weight: 400;
-      line-height: 24px;
-      letter-spacing: 0px
+      letter-spacing: 0rem
     }
   }
 
@@ -550,7 +625,7 @@ padding: 0px;
     
       &::-webkit-scrollbar {
         background: transparent; /* Chrome/Safari/Webkit */
-        width: 0px;
+        width: 0rem;
       }
 
       &-item {
@@ -629,7 +704,7 @@ padding: 0px;
 
   border-radius: 0.3125rem;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  background: rgb(50, 44, 44);
+  background: v.$grey2;
 
   &__picture {
     display: flex;
@@ -739,7 +814,7 @@ padding: 0px;
       font-size: 0.75rem;
       font-weight: 400;
       line-height: 0.9rem;
-      letter-spacing: 0px;
+      letter-spacing: 0rem;
       text-align: left;
     } 
   }
@@ -752,7 +827,7 @@ padding: 0px;
     font-size: 0.8rem;
     font-weight: 500;
     line-height: 1rem;
-    letter-spacing: 0px;
+    letter-spacing: 0rem;
     text-align: left;
   }
 }
@@ -783,7 +858,7 @@ padding: 0px;
     font-size: 0.625rem;
     font-weight: 600;
     line-height: 0.9rem;
-    letter-spacing: 0px;
+    letter-spacing: 0rem;
     text-align: left;
   }
 }
@@ -816,7 +891,7 @@ padding: 0px;
       font-family: Inter;
       font-size: 2.5rem;
       font-weight: 700;
-      letter-spacing: 0px;
+      letter-spacing: 0rem;
     }
     &-description {
       margin: 0;
@@ -826,7 +901,7 @@ padding: 0px;
       font-family: Inter;
       font-size: 1.25rem;
       font-weight: 400;
-      letter-spacing: 0px;
+      letter-spacing: 0rem;
       text-align: left;
     }
   }
@@ -851,7 +926,7 @@ padding: 0px;
         font-family: Inter;
         font-size: 1rem;
         font-weight: 400;
-        letter-spacing: 0px;
+        letter-spacing: 0rem;
       }
       &-link {
         color: v.$text;
@@ -859,7 +934,7 @@ padding: 0px;
         font-family: Inter;
         font-size: 1rem;
         font-weight: 600;
-        letter-spacing: 0px;       
+        letter-spacing: 0rem;       
       }
     }
     &-right {
@@ -883,7 +958,7 @@ padding: 0px;
         font-family: Inter;
         font-size: 1rem;
         font-weight: 400;
-        letter-spacing: 0px;
+        letter-spacing: 0rem;
       }
       &-link {
         color: v.$text;
@@ -891,7 +966,7 @@ padding: 0px;
         font-family: Inter;
         font-size: 1rem;
         font-weight: 600;
-        letter-spacing: 0px;       
+        letter-spacing: 0rem;       
       }
     }
   }
@@ -950,7 +1025,7 @@ padding: 0px;
         font-family: Inter;
         font-size: 1rem;
         font-weight: 400;
-        letter-spacing: 0px;
+        letter-spacing: 0rem;
       }
       &-checkbox {
         
@@ -971,7 +1046,7 @@ padding: 0px;
           content: "✔";
           width: 100%;
           height: 100%;
-          border-radius: 4px;
+          border-radius: 0.25rem;
 
           padding: 0;
           margin: 0;
@@ -998,7 +1073,7 @@ padding: 0px;
 @media screen and (max-width:48rem) {
   .contacts {
     height: auto;
-    max-height: 9999px;
+    max-height: 9999rem;
     &__text {
       grid-template-columns: auto minmax(auto, 36rem);
       &-left {
@@ -1024,7 +1099,7 @@ padding: 0px;
 @media screen and (max-width:33rem) {
   .contacts {
     height: auto;
-    max-height: 9999px;
+    max-height: 9999rem;
     &__text {
       grid-template-columns: 1fr;
       &-left {
