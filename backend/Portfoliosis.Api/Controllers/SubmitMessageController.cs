@@ -18,7 +18,7 @@ public class MessagesController : ControllerBase
     }
 
 
-    [HttpPost("submit")]
+    [HttpPost()]
     public async Task<IResult> Submit(SubmitMessageCommand command)
     {
         var result = await _sender.Send(command);

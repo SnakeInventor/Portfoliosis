@@ -9,6 +9,7 @@
     <DockerfileFile>../Dockerfile</DockerfileFile>
     <DockerfileContext>..</DockerfileContext>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
   </PropertyGroup>
 
   <ItemGroup>

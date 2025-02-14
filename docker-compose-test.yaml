@@ -1,7 +1,5 @@
 services:
   frontend:
-    environment:
-      - DEBUG=1
     ports:
       - 8082:80
       - 8083:443
@@ -12,11 +10,14 @@ services:
       - DB__NAME=portfoliosis_test
       - DB__USER=testuser
       - DB__PASSWORD=testpass
+    ports:
+      - 8080:8080
+      - 8081:8081
     
   database:
     environment:
       - POSTGRES_DB=portfoliosis_test
       - POSTGRES_USER=testuser
       - POSTGRES_PASSWORD=testpass
-    volumes:
-      - /database:/var/lib/postgresql/data
+    ports:
+    - 5432:5432

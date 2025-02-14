@@ -5,7 +5,10 @@ services:
       context: ./frontend
       dockerfile: ./Dockerfile
     environment:
-      - BACKEND_API_URL=http://backend:8080
+      - BACKEND_API_URL=https://backend:8081
+      - DOMAIN_CERT=portfoliosis.crt
+      - DOMAIN_CERT_KEY=portfoliosis.key
+      - BACKEND_API_CERT=portfoliosisbackend.pem
     volumes:
       - ./frontend/certs:/etc/nginx/ssl/certs:ro
     ports:
@@ -15,17 +18,22 @@ services:
       - backend
 
   backend:
+    image: ghcr.io/snakeinventor/portfoliosis-backend:latest
     build:
       context: ./backend
       dockerfile: ./Dockerfile
     environment:
       - ASPNETCORE_ENVIRONMENT=Production
       - ASPNETCORE_HTTP_PORTS=8080
+      - ASPNETCORE_HTTPS_PORTS=8081
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/app/certs/portfoliosisbackend.pfx
       - DB__HOST=database
       - DB__PORT=5432
       - DB__NAME=portfoliosis
       - DB__USER=${POSTGRES_DB_USER}
       - DB__PASSWORD=${POSTGRES_DB_PASSWORD}
+    volumes:
+      - ./backend/certs:/app/certs:ro
     depends_on:
       - database
   

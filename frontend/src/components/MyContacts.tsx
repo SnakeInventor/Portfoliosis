@@ -1,6 +1,10 @@
-import React, { useMemo, useState } from 'react'
+import React, { useMemo, useRef, useState } from 'react'
 import enTextData from "../assets/localisation/Contacts/en-us.json";
 import ruTextData from "../assets/localisation/Contacts/ru-ru.json";
+import { useMutation } from '@tanstack/react-query';
+import  "../api/assertOk"
+import { createMessage, createMessageData} from "../api/contactsApi"
+import MyDialog from './MyDialog';
 
 
 type Props = {
@@ -13,28 +17,42 @@ type FormData = {
   message: string;
   agreement: boolean;
 };
-export default function MyContacts({language}: Props) {
 
+function validateEmail (emailString:string):boolean {
+  // eslint-disable-next-line no-useless-escape
+  const regexEmailValidator = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
+  if(emailString && emailString.match(regexEmailValidator)){
+    return true;
+  }else{
+    return false;
+  }
+}
+
+
+export default function MyContacts({language}: Props) {
   const textData = useMemo(() => (language === "ru-ru") ?  ruTextData : enTextData, [language])
 
-  
-
-  function validateEmail (emailString:string):boolean {
-    // eslint-disable-next-line no-useless-escape
-    const regexEmailValidator = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
-    if(emailString && emailString.match(regexEmailValidator)){
-      return true;
-    }else{
-      return false;
-    }
-  }
+  const sentMessages = useRef<createMessageData[]>([]); 
 
   const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
     message: '',
     agreement: false
+  });  
+
+  const mutation = useMutation({
+    mutationFn: async (messageData: createMessageData) => {
+      return createMessage(messageData).assertOk();
+    },
+    onSuccess: (_, messageData) => {
+      sentMessages.current.push(messageData);
+      deliveredDialogRef.current?.showModal()
+    },
+    onError: () => errorEncounteredDialogRef.current?.showModal(),
   });
+
+  // form
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value, type } = e.target;
@@ -56,19 +74,38 @@ export default function MyContacts({language}: Props) {
     
   };
 
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    const messageData: createMessageData = { name: formData.name, email: formData.email, text: formData.message }
+
+    const isMesssageUnique: boolean = sentMessages.current.every((message) => {
+      return messageData.name !== message.name
+        || messageData.email !== message.email
+        || messageData.text !== message.text;
+    });
+
+    if (isMesssageUnique) {
+      await mutation.mutateAsync(messageData);
+    } else {
+      sameMessageDialogRef.current?.showModal()
+    }    
+  };
+
   const shouldEnableButton = ():boolean => {
     const res = formData.agreement
     && formData.name.trim() !== "" 
     && formData.email.trim() !== ""
     && formData.message.trim() !== ""
     && validateEmail(formData.email)    
+    && !mutation.isPending
     return res;
   }
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    // todo
-  };
+  // pop-ups
+  const deliveredDialogRef = useRef<HTMLDialogElement | null>(null);
+  const sameMessageDialogRef = useRef<HTMLDialogElement | null>(null);
+  const errorEncounteredDialogRef = useRef<HTMLDialogElement | null>(null);
+
 
   return (
     <section id='contacts' className='contacts'>
@@ -93,19 +130,22 @@ export default function MyContacts({language}: Props) {
         <form className="contacts__form" onSubmit={handleSubmit}>
           <input name='name' 
           type='text' 
+          maxLength={255}
           className="contacts__form-input contacts__form-input--name" 
           placeholder={textData.form.namefieldplaceholder}
           onChange={handleInputChange}>
           </input>
 
           <input name='email' 
-          type='email' 
+          type='email'
+          maxLength={320} 
           className="contacts__form-input contacts__form-input--email" 
           placeholder={textData.form.emailfieldplaceholder} 
           onChange={handleInputChange}>
           </input>
 
-          <textarea name='message' 
+          <textarea name='message'
+          maxLength={4000} 
           className="contacts__form-input contacts__form-input--message" 
           placeholder={textData.form.messagefieldplaceholder} 
           onChange={handleInputChange}>
@@ -140,6 +180,27 @@ export default function MyContacts({language}: Props) {
           </ul>
         </div>
       </div>
+      <MyDialog title={textData.dialogs.success.title} ref={deliveredDialogRef} 
+      buttonParams={{buttonText: "Close", onButtonClick: () => deliveredDialogRef.current?.close()}}
+      >
+        <h2>{textData.dialogs.success.heading}</h2>
+      </MyDialog>
+      <MyDialog title={textData.dialogs.alreadysubmitted.title} ref={sameMessageDialogRef} 
+      buttonParams={{buttonText: "Close", onButtonClick: () => sameMessageDialogRef.current?.close()}}
+      >
+        <h2>{textData.dialogs.alreadysubmitted.heading}</h2>
+        <h4>{textData.dialogs.alreadysubmitted.description}</h4>
+      </MyDialog>
+      <MyDialog title={textData.dialogs.error.title} ref={errorEncounteredDialogRef} 
+      buttonParams={{buttonText: "Close", onButtonClick: () => errorEncounteredDialogRef.current?.close()}}
+      >
+        <h2>{textData.dialogs.error.heading}</h2>
+        <h4>
+          {textData.dialogs.error.description}
+          <br/>
+          {mutation.error?.message}
+        </h4>
+      </MyDialog>
     </section>
   )
 

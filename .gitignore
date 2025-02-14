@@ -9,6 +9,7 @@ lerna-debug.log*
 
 # ssl certificates
 *.crt
+*.pfx
 *.pem
 *.key
 **/certs/*
@@ -43,5 +44,4 @@ dist-ssr
 *.suo
 *.ntvs*
 *.njsproj
-*.sln
 *.sw?

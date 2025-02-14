@@ -4,10 +4,11 @@ import enTextData from "../assets/localisation/Header/en-us.json"
 import ruTextData from "../assets/localisation/Header/ru-ru.json"
 
 type MyHeaderProps = {
-  language: "ru-ru" | "en-us"
+  language: "ru-ru" | "en-us",
+  onLanguageButtonClick: React.MouseEventHandler<HTMLButtonElement>
 }
 
-export default function MyHeader({language} :MyHeaderProps) {
+export default function MyHeader({language, onLanguageButtonClick} :MyHeaderProps) {
 
   const textData = useMemo(() => (language === "ru-ru") ?  ruTextData : enTextData, [language])
 
@@ -29,7 +30,7 @@ export default function MyHeader({language} :MyHeaderProps) {
           }
         </ul>
       </nav>
-      <button className="header__reset-language">
+      <button className="header__reset-language" onClick={onLanguageButtonClick}>
         <div className="header__reset-language-container">
           <img className="header__reset-language-image" src={language_icon}/>
         </div>

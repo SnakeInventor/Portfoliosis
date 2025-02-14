@@ -32,5 +32,21 @@
     "messagefieldplaceholder": "Message",
     "agreementtext": "I give my permission to store and process my data.",
     "submitbuttontext": "Submit"
+  },
+  "dialogs": {
+   "success" : {
+    "title": "Notification",
+    "heading": "Your message has been delivered!"
+   },
+   "alreadysubmitted" : {
+    "title": "Notification",
+    "heading": "Message already sent",
+    "description" : "The message you are trying to send is identical to one of the previous ones."
+   },
+   "error" : {
+    "title": "Error",
+    "heading": "Ooops!",
+    "description" : "Something went wrong while trying to deliver your message!"
+   }
   }
 }
