@@ -1,0 +1,398 @@
+{
+  "title": "Projects",
+  "description": "My most recent projects and work.",
+  "cards": [
+    {
+      "title": "Portfoliosis",
+      "image": "/sections/projects/pictures/portfoliosispicture.png",
+      "links": [
+        {
+          "href": "https://github.com/SnakeInventor/Portfoliosis",
+          "image": "/sections/projects/logos/githublogo.png"
+        }
+      ],
+      "shields": [
+        {
+          "text": "TypeScript",
+          "image": "/sections/projects/logos/typescriptlogo.png",
+          "color": "#2050a0"
+        },
+        {
+          "text": "CSharp",
+          "image": "/sections/projects/logos/csharplogo.png",
+          "color": "#700050"
+        },
+        {
+          "text": "React",
+          "image": "/sections/projects/logos/reactlogo.png",
+          "color": "#3050ff"
+        },
+        {
+          "text": "Actions",
+          "image": "/sections/projects/logos/githublogo.png",
+          "color": "#606060"
+        },
+        {
+          "text": "Bash",
+          "image": "/sections/projects/logos/bashlogo.png",
+          "color": "Green"
+        },
+        {
+          "text": "Nginx",
+          "image": "/sections/projects/logos/nginxlogo.png",
+          "color": "#005000"
+        },
+        {
+          "text": "PostgreSQL",
+          "image": "/sections/projects/logos/postgresqllogo.png",
+          "color": "#336791"
+        }
+      ],
+      "description": "Fully responsive single-page personal portfolio website built with modern technological stack.",
+      "timestamp": "01/2025 -> 02/2025"
+    },
+    {
+      "title": "Placeholder2",
+      "image": "/sections/projects/pictures/placeholderpicture.png",
+      "links": [
+        {
+          "href": "https://github.com",
+          "image": "/sections/projects/logos/githublogo.png"
+        }
+      ],
+      "shields": [
+        {
+          "text": "TypeScript",
+          "image": "/sections/projects/logos/typescriptlogo.png",
+          "color": "#2050a0"
+        },
+        {
+          "text": "CSharp",
+          "image": "/sections/projects/logos/csharplogo.png",
+          "color": "#700050"
+        },
+        {
+          "text": "React",
+          "image": "/sections/projects/logos/reactlogo.png",
+          "color": "#3050ff"
+        },
+        {
+          "text": "Actions",
+          "image": "/sections/projects/logos/githublogo.png",
+          "color": "#606060"
+        },
+        {
+          "text": "Bash",
+          "image": "/sections/projects/logos/bashlogo.png",
+          "color": "Green"
+        },
+        {
+          "text": "Nginx",
+          "image": "/sections/projects/logos/nginxlogo.png",
+          "color": "#005000"
+        },
+        {
+          "text": "PostgreSQL",
+          "image": "/sections/projects/logos/postgresqllogo.png",
+          "color": "#336791"
+        }
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "timestamp": "01/2025 -> 02/2025"
+    },
+    {
+      "title": "Placeholder3",
+      "image": "/sections/projects/pictures/placeholderpicture.png",
+      "links": [
+        {
+          "href": "https://github.com",
+          "image": "/sections/projects/logos/githublogo.png"
+        }
+      ],
+      "shields": [
+        {
+          "text": "TypeScript",
+          "image": "/sections/projects/logos/typescriptlogo.png",
+          "color": "#2050a0"
+        },
+        {
+          "text": "CSharp",
+          "image": "/sections/projects/logos/csharplogo.png",
+          "color": "#700050"
+        },
+        {
+          "text": "React",
+          "image": "/sections/projects/logos/reactlogo.png",
+          "color": "#3050ff"
+        },
+        {
+          "text": "Actions",
+          "image": "/sections/projects/logos/githublogo.png",
+          "color": "#606060"
+        },
+        {
+          "text": "Bash",
+          "image": "/sections/projects/logos/bashlogo.png",
+          "color": "Green"
+        },
+        {
+          "text": "Nginx",
+          "image": "/sections/projects/logos/nginxlogo.png",
+          "color": "#005000"
+        },
+        {
+          "text": "PostgreSQL",
+          "image": "/sections/projects/logos/postgresqllogo.png",
+          "color": "#336791"
+        }
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "timestamp": "01/2025 -> 02/2025"
+    },
+    {
+      "title": "Placeholder4",
+      "image": "/sections/projects/pictures/placeholderpicture.png",
+      "links": [
+        {
+          "href": "https://github.com",
+          "image": "/sections/projects/logos/githublogo.png"
+        }
+      ],
+      "shields": [
+        {
+          "text": "TypeScript",
+          "image": "/sections/projects/logos/typescriptlogo.png",
+          "color": "#2050a0"
+        },
+        {
+          "text": "CSharp",
+          "image": "/sections/projects/logos/csharplogo.png",
+          "color": "#700050"
+        },
+        {
+          "text": "React",
+          "image": "/sections/projects/logos/reactlogo.png",
+          "color": "#3050ff"
+        },
+        {
+          "text": "Actions",
+          "image": "/sections/projects/logos/githublogo.png",
+          "color": "#606060"
+        },
+        {
+          "text": "Bash",
+          "image": "/sections/projects/logos/bashlogo.png",
+          "color": "Green"
+        },
+        {
+          "text": "Nginx",
+          "image": "/sections/projects/logos/nginxlogo.png",
+          "color": "#005000"
+        },
+        {
+          "text": "PostgreSQL",
+          "image": "/sections/projects/logos/postgresqllogo.png",
+          "color": "#336791"
+        }
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "timestamp": "01/2025 -> 02/2025"
+    },
+    {
+      "title": "Placeholder5",
+      "image": "/sections/projects/pictures/placeholderpicture.png",
+      "links": [
+        {
+          "href": "https://github.com",
+          "image": "/sections/projects/logos/githublogo.png"
+        }
+      ],
+      "shields": [
+        {
+          "text": "TypeScript",
+          "image": "/sections/projects/logos/typescriptlogo.png",
+          "color": "#2050a0"
+        },
+        {
+          "text": "CSharp",
+          "image": "/sections/projects/logos/csharplogo.png",
+          "color": "#700050"
+        },
+        {
+          "text": "React",
+          "image": "/sections/projects/logos/reactlogo.png",
+          "color": "#3050ff"
+        },
+        {
+          "text": "Actions",
+          "image": "/sections/projects/logos/githublogo.png",
+          "color": "#606060"
+        },
+        {
+          "text": "Bash",
+          "image": "/sections/projects/logos/bashlogo.png",
+          "color": "Green"
+        },
+        {
+          "text": "Nginx",
+          "image": "/sections/projects/logos/nginxlogo.png",
+          "color": "#005000"
+        },
+        {
+          "text": "PostgreSQL",
+          "image": "/sections/projects/logos/postgresqllogo.png",
+          "color": "#336791"
+        }
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "timestamp": "01/2025 -> 02/2025"
+    },
+    {
+      "title": "Placeholder6",
+      "image": "/sections/projects/pictures/placeholderpicture.png",
+      "links": [
+        {
+          "href": "https://github.com",
+          "image": "/sections/projects/logos/githublogo.png"
+        }
+      ],
+      "shields": [
+        {
+          "text": "TypeScript",
+          "image": "/sections/projects/logos/typescriptlogo.png",
+          "color": "#2050a0"
+        },
+        {
+          "text": "CSharp",
+          "image": "/sections/projects/logos/csharplogo.png",
+          "color": "#700050"
+        },
+        {
+          "text": "React",
+          "image": "/sections/projects/logos/reactlogo.png",
+          "color": "#3050ff"
+        },
+        {
+          "text": "Actions",
+          "image": "/sections/projects/logos/githublogo.png",
+          "color": "#606060"
+        },
+        {
+          "text": "Bash",
+          "image": "/sections/projects/logos/bashlogo.png",
+          "color": "Green"
+        },
+        {
+          "text": "Nginx",
+          "image": "/sections/projects/logos/nginxlogo.png",
+          "color": "#005000"
+        },
+        {
+          "text": "PostgreSQL",
+          "image": "/sections/projects/logos/postgresqllogo.png",
+          "color": "#336791"
+        }
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "timestamp": "01/2025 -> 02/2025"
+    },
+    {
+      "title": "Placeholder7",
+      "image": "/sections/projects/pictures/placeholderpicture.png",
+      "links": [
+        {
+          "href": "https://github.com",
+          "image": "/sections/projects/logos/githublogo.png"
+        }
+      ],
+      "shields": [
+        {
+          "text": "TypeScript",
+          "image": "/sections/projects/logos/typescriptlogo.png",
+          "color": "#2050a0"
+        },
+        {
+          "text": "CSharp",
+          "image": "/sections/projects/logos/csharplogo.png",
+          "color": "#700050"
+        },
+        {
+          "text": "React",
+          "image": "/sections/projects/logos/reactlogo.png",
+          "color": "#3050ff"
+        },
+        {
+          "text": "Actions",
+          "image": "/sections/projects/logos/githublogo.png",
+          "color": "#606060"
+        },
+        {
+          "text": "Bash",
+          "image": "/sections/projects/logos/bashlogo.png",
+          "color": "Green"
+        },
+        {
+          "text": "Nginx",
+          "image": "/sections/projects/logos/nginxlogo.png",
+          "color": "#005000"
+        },
+        {
+          "text": "PostgreSQL",
+          "image": "/sections/projects/logos/postgresqllogo.png",
+          "color": "#336791"
+        }
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "timestamp": "01/2025 -> 02/2025"
+    },
+    {
+      "title": "Placeholder8",
+      "image": "/sections/projects/pictures/placeholderpicture.png",
+      "links": [
+        {
+          "href": "https://github.com",
+          "image": "/sections/projects/logos/githublogo.png"
+        }
+      ],
+      "shields": [
+        {
+          "text": "TypeScript",
+          "image": "/sections/projects/logos/typescriptlogo.png",
+          "color": "#2050a0"
+        },
+        {
+          "text": "CSharp",
+          "image": "/sections/projects/logos/csharplogo.png",
+          "color": "#700050"
+        },
+        {
+          "text": "React",
+          "image": "/sections/projects/logos/reactlogo.png",
+          "color": "#3050ff"
+        },
+        {
+          "text": "Actions",
+          "image": "/sections/projects/logos/githublogo.png",
+          "color": "#606060"
+        },
+        {
+          "text": "Bash",
+          "image": "/sections/projects/logos/bashlogo.png",
+          "color": "Green"
+        },
+        {
+          "text": "Nginx",
+          "image": "/sections/projects/logos/nginxlogo.png",
+          "color": "#005000"
+        },
+        {
+          "text": "PostgreSQL",
+          "image": "/sections/projects/logos/postgresqllogo.png",
+          "color": "#336791"
+        }
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "timestamp": "01/2025 -> 02/2025"
+    }
+  ]
+}

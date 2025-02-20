@@ -1,0 +1,52 @@
+{
+  "title": "КОНТАКТЫ",
+  "description": "Связаться со мной",
+  "lefttext": {
+    "firstparagraph" : "Нужна помощь, или хотите что-то обсудить?",
+    "secondparagraph" : {
+      "emaillink" : {
+        "text": "Отправьте письмо на мою электронную почту",
+        "href": "mailto:hiyperzelog@yandex.ru"
+      },
+      "othertext": "."
+    },
+    "thirdparagraph" : "Или можете заполнить данную форму и нажать \"Отправить\" ->"
+  },
+  "righttext": {
+    "links": [
+      {
+        "title": "Электронная почта",
+        "text": "hiyperzelog@yandex.ru",
+        "href": "mailto:hiyperzelog@yandex.ru"
+      },
+      {
+        "title": "Страница GitHub",
+        "text": "snakeinventor",
+        "href": "https://github.com/snakeinventor"
+      }
+    ]
+  },
+  "form": {
+    "namefieldplaceholder": "Имя",
+    "emailfieldplaceholder": "Электронная почта",
+    "messagefieldplaceholder": "Сообщение",
+    "agreementtext": "Я даю согласие на хранение и обработку моих данных.",
+    "submitbuttontext": "Отправить"
+  },
+  "dialogs": {
+   "success" : {
+    "title": "Уведомление",
+    "heading": "Ваше сообщение было успешно доставлено."
+   },
+   "alreadysubmitted" : {
+    "title": "Уведомление",
+    "heading": "Сообщение уже отправлено",
+    "description" : "Отправляемое сообщение идентично одному из предыдущих!"
+   },
+   "error" : {
+    "title": "Ошибка",
+    "heading": "Упс",
+    "description" : "Что-то пошло не так во время доставки сообщения!"
+   }
+  }
+}

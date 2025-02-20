@@ -1,0 +1,21 @@
+{
+  "logoText": "SNAKEINVENTOR",
+  "navigation" : [
+    {
+      "text": "Home",
+      "link": "#header"
+    },
+    {
+      "text": "Skills",
+      "link": "#skills"
+    },
+    {
+      "text": "Projects",
+      "link": "#projects"
+    },
+    {
+      "text": "Contact",
+      "link": "#contacts"
+    }
+  ]
+}

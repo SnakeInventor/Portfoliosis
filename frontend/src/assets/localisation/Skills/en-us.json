@@ -1,0 +1,97 @@
+{
+  "title": "My Skills",
+  "description": "Some tools, technologies and methodologies i have experience working with",
+  "tabs": [
+    {
+      "title": "Backend",
+      "cards": [
+        {
+          "title": "C#/.NET",
+          "icon": "/sections/skills/csharplogo.png",
+          "description": "Understand generics, TPL & Async/Await, LINQ, Reflection. Libraries that I am familliar with: EFCore, MediatR, XUnit."
+        },
+        {
+          "title": "ASP.NET Core",
+          "icon": "/sections/skills/aspnetcorelogo.png",
+          "description": "My go-to choice for backend services. Familliar with DI and configuration, wrote custom middleware, controllers."
+        },
+        {
+          "title": "PostgreSQL",
+          "icon": "/sections/skills/postgresqllogo.png",
+          "description": "Familiar with SQL, joins, constraints, pagination. Follow ACID principles, optimised with indexes."
+        }
+      ]
+    },
+    {
+      "title": "Frontend",
+      "cards": [
+
+        {
+          "title": "TypeScript",
+          "icon": "/sections/skills/typescriptlogo.png",
+          "description": "Familiar with type system, browser API, node and npm. Know how event-loop and closures work."
+        },
+        {
+          "title": "SASS/SCSS",
+          "icon": "/sections/skills/sasslogo.png",
+          "description": "I use variables, nesting, namespaces, such as color. Follow BEM naming convention."
+        },
+        {
+          "title": "React",
+          "icon": "/sections/skills/reactlogo.png",
+          "description": "Understand components, hooks, side-effects, VirtualDOM. Made a few SPA's with it."
+        },
+        {
+          "title": "React-Query",
+          "icon": "/sections/skills/reactquerylogo.png",
+          "description": "I used both queries and mutations, understand how its caching works. Love it for its simplicity."
+        }
+      ]
+    },
+    {
+      "title": "DevOps",
+      "cards": [
+        {
+          "title": "Nginx",
+          "icon": "/sections/skills/nginxlogo.png",
+          "description": "I use Nginx in conjunction with Kestrel as an internet-facing reverse proxy for serving static files and forwarding requests to the backend."
+        },
+        {
+          "title": "Docker",
+          "icon": "/sections/skills/dockerlogo.png",
+          "description": "Used to writing dockerfiles and compose.yaml. Familiar with port forwarding, networks and volumes, a few commands."
+        },
+        {
+          "title": "Git",
+          "icon": "/sections/skills/gitlogo.png",
+          "description": "Understand file states, commits and hashes, branches and merges. Written quite a few .gitingores. Know the difference between fetch and pull :)."
+        },
+        {
+          "title": "GitHub",
+          "icon": "/sections/skills/githublogo.png",
+          "description": "Constantly lurk in there for inspiration. Automated workflow with github actions. Made a few PR's."
+        },
+        {
+          "title": "CI/CD",
+          "icon": "/sections/skills/cicdlogo.png",
+          "description": "Familiar with concepts of CI and CD, know how to setup ci/cd pipeline in github actions, push containers to the registry."
+        },
+        {
+          "title": "Linux",
+          "icon": "/sections/skills/linuxlogo.png",
+          "description": "Used with working in terminal, can write bash scripts. Experimented with running debian on top of android with proot."
+        }
+      ]
+    },
+    {
+      "title": "Other",
+      "cards": [
+        {
+          "title": "dnSpy",
+          "icon": "/sections/skills/dnspylogo.png",
+          "description": "I used it to write mods for games. Decompiled and modified dlls, know how to debug processes with it."
+        }
+      ]
+    }
+  ]
+}

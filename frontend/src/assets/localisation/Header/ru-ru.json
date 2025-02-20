@@ -1,0 +1,21 @@
+{
+  "logoText": "SNAKEINVENTOR",
+  "navigation" : [
+    {
+      "text": "Главная",
+      "link": "#header"
+    },
+    {
+      "text": "Навыки",
+      "link": "#skills"
+    },
+    {
+      "text": "Проекты",
+      "link": "#projects"
+    },
+    {
+      "text": "Контакты",
+      "link": "#contacts"
+    }
+  ]
+}

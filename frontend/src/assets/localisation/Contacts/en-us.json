@@ -1,0 +1,47 @@
+{
+  "title": "CONTACT",
+  "description": "Connect with me",
+  "lefttext": {
+    "firstparagraph" : "Need a help with something or want to chat?",
+    "secondparagraph" : {
+      "emaillink" : {
+        "text": "Send me an email",
+        "href": "mailto:"
+      },
+      "othertext": " to discuss your thing."
+    },
+    "thirdparagraph" : "Alternatively write your request into a form and click \"submit\" ->"
+  },
+  "righttext": {
+    "links": [
+      {
+        "title": "My github",
+        "text": "snakeinventor",
+        "href": "https://github.com/snakeinventor"
+      }
+    ]
+  },
+  "form": {
+    "namefieldplaceholder": "Name",
+    "emailfieldplaceholder": "Email",
+    "messagefieldplaceholder": "Message",
+    "agreementtext": "I give my permission to store and process my data.",
+    "submitbuttontext": "Submit"
+  },
+  "dialogs": {
+   "success" : {
+    "title": "Notification",
+    "heading": "Your message has been delivered!"
+   },
+   "alreadysubmitted" : {
+    "title": "Notification",
+    "heading": "Message already sent",
+    "description" : "The message you are trying to send is identical to one of the previous ones."
+   },
+   "error" : {
+    "title": "Error",
+    "heading": "Ooops!",
+    "description" : "Something went wrong while trying to deliver your message!"
+   }
+  }
+}

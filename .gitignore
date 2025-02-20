@@ -9,12 +9,15 @@ lerna-debug.log*
 
 # ssl certificates
 *.crt
+*.pfx
 *.pem
 *.key
 **/certs/*
 !**/keepfolder.md
 
 # build results
+**/bin/*
+**/obj/*
 node_modules
 dist
 dist
@@ -22,12 +25,18 @@ build
 dist-ssr
 *.local
 
+# database persistence
+**/database/*
+!**/keepfolder.md
+
 # Environment files
 .env*
 .env.*
 .env.*.local
 
 # Editor directories and files
+.vs/
+.vs/*
 .vscode/*
 !.vscode/extensions.json
 .idea
@@ -35,5 +44,4 @@ dist-ssr
 *.suo
 *.ntvs*
 *.njsproj
-*.sln
 *.sw?
