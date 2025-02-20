@@ -6,19 +6,45 @@
       "title": "Backend",
       "cards": [
         {
-          "title": "ASP.NET",
-          "icon": "/sections/skills/aspnet.png",
-          "description": "Place holder"
+          "title": "C#/.NET",
+          "icon": "/sections/skills/csharplogo.png",
+          "description": "Понимаю как работает TPL & Async/Await, использовал дженерики, LINQ, Reflection. Знаком с библиотеками EFCore, MediatR, XUnit."
+        },
+        {
+          "title": "ASP.NET Core",
+          "icon": "/sections/skills/aspnetcorelogo.png",
+          "description": "Использую для backend-сервисов. Знаком с DI и конфигурацией, писал кастомные middleware и контроллеры."
+        },
+        {
+          "title": "PostgreSQL",
+          "icon": "/sections/skills/postgresqllogo.png",
+          "description": "Знаком с языком SQL, джоинами, constraints, пагинацией. Оптимизировал индексами, следую принципам ACID."
         }
       ]
     },
     {
       "title": "Frontend",
       "cards": [
+
+        {
+          "title": "TypeScript",
+          "icon": "/sections/skills/typescriptlogo.png",
+          "description": "Знаком с системой типов, API браузера, node и npm. Знаю как работабт event-loop и замыкания."
+        },
+        {
+          "title": "SASS/SCSS",
+          "icon": "/sections/skills/sasslogo.png",
+          "description": "Использую переменные, вложенные класы, пространства имен, такие как color. Следую соглашению BEM."
+        },
         {
           "title": "React",
-          "icon": "/sections/skills/react.png",
-          "description": "Understand components, hooks, side-effects, VirtualDOM. Made a few SPA's with it."
+          "icon": "/sections/skills/reactlogo.png",
+          "description": "Понимаю компоненты, хуки, побочные эффекты (side-effects), VirtualDOM. Использовал для создания нескольких SPA."
+        },
+        {
+          "title": "React-Query",
+          "icon": "/sections/skills/reactquerylogo.png",
+          "description": "Использовал как запросы, так и мутации, понимаю, как работает кэширование. Люблю за простоту."
         }
       ]
     },
@@ -27,20 +53,46 @@
       "cards": [
         {
           "title": "Nginx",
-          "icon": "/sections/skills/aspnet.png",
-          "description": "Place holder"
+          "icon": "/sections/skills/nginxlogo.png",
+          "description": "Я использую nginx в связке с кестрел, как internet-facing reverse-proxy, для доставки статических файлов и перенаправлении на бекенд."
+        },
+        {
+          "title": "Docker",
+          "icon": "/sections/skills/dockerlogo.png",
+          "description": "Написал немало dockerfiles и compose.yaml. Знаком с перенаправлением портов, сетями и volumes, знаю команды."
+        },
+        {
+          "title": "Git",
+          "icon": "/sections/skills/gitlogo.png",
+          "description": "Понимаю состояния файлов, коммиты и хэши, ветки и слияния, что писать в .gitignore. Знаю разницу между fetch и pull. :)"
+        },
+        {
+          "title": "GitHub",
+          "icon": "/sections/skills/githublogo.png",
+          "description": "Постоянно скинурю на наличие интересных проектов. Умею делать Pull request. Автоматизировал сборку с github actions."
+        },
+        {
+          "title": "CI/CD",
+          "icon": "/sections/skills/cicdlogo.png",
+          "description": "Знаком с концепциями CI и CD, знаю, как настроить pipeline в github actions и запушить контейнеры в реестр."
+        },
+        {
+          "title": "Linux",
+          "icon": "/sections/skills/linuxlogo.png",
+          "description": "Терминал как родной, могу писать bash-скрипты. Экспериментировал с запуском debian поверх android через proot."
         }
       ]
     },
     {
-      "title": "Другие",
+      "title": "Прочее",
       "cards": [
         {
           "title": "dnSpy",
-          "icon": "/sections/skills/dnSpy.png",
-          "description": "Place holder"
+          "icon": "/sections/skills/dnspylogo.png",
+          "description": "Когда писал моды для игр, скармливал ему dll файлы и дебажил их."
         }
       ]
     }
   ]
 }
+

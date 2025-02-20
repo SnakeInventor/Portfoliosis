@@ -6,7 +6,7 @@
     "secondparagraph" : {
       "emaillink" : {
         "text": "Send me an email",
-        "href": "mailto:thisis@email.com"
+        "href": "mailto:"
       },
       "othertext": " to discuss your thing."
     },
@@ -14,11 +14,6 @@
   },
   "righttext": {
     "links": [
-      {
-        "title": "Email",
-        "text": "thisis@email.com",
-        "href": "mailto:thisis@email.com"
-      },
       {
         "title": "My github",
         "text": "snakeinventor",
